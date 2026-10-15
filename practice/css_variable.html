@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable</title>
+    <style>
+        :root{
+            --radius:30px;
+            --pading:20px;
+            font-size: 20px;
+        }
+        .card{
+            --border:3px solid red;
+            border: var(--border);
+            padding: var(--pading);
+            margin: 20px;
+            border-radius: var(--radius);
+        }
+        .hero{
+            --text--color:purple;
+            color: var(--text--color);
+        }
+    </style>
+</head>
+<body>
+    <div class="card"> card 1</div>
+    <div class="card">card 2</div>
+
+    <div class="hero">
+        <h2>title</h2>
+        <p>hello students</p>
+    </div>
+</body>
+</html>
