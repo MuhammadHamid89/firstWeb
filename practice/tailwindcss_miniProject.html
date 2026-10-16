@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS Mini Project Responsive land page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">
+                DigiSkills
+            </h1>
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#" class="hover:text-blue-600">Courses</a></li>
+                <li><a href="#" class="hover:text-blue-600">About</a></li>
+                <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                Get Started
+            </button>
+        </div>
+    </nav>
+
+    <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight md-6">
+                Learn Development Easily
+            </h2>
+
+            <p class="text-gray-600 text-lg mb-6">
+                start Learning html , css , tailwind css mini project 
+            </p>
+
+            <div class="space-x-4">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">start learning
+
+                </button>
+
+                <button class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50">
+                    view courses
+                </button>
+            </div>
+        </div>
+
+        <div class="w-full bg-blue-100 rounded-2xl p-8 flex justify-center items-center">
+            <img src="data:image/jpeg;base64,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"
+             alt="Learning image" 
+             class="w-full max-w-md h-auto rounded-xl shadow-lg object-cover">
+
+        </div>
+    </section>
+
+    
+    <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">
+            Why Choose This Platform for Learning?
+        </h2>
+
+        <div class="grid md:grid-cols-4 gap-8">
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-3 text-blue-600">
+                    Easy Lessons
+                </h3>
+                <p class="text-gray-600">
+                    Learn every step easily.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-3 text-blue-600">
+                    Practical Examples
+                </h3>
+                <p class="text-gray-600">
+                    Learn coding with real examples.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-3 text-blue-600">
+                    Strong Concepts
+                </h3>
+                <p class="text-gray-600">
+                    Practice real code to build strong concepts.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-3 text-blue-600">
+                    Responsive Design
+                </h3>
+                <p class="text-gray-600">
+                    Create web pages that work on all devices.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-white text-center py-6">
+<p>2026 digiskill . all righ treserved</p>
+</footer>
+</body>
+</html>
