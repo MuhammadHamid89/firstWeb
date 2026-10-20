@@ -1,22 +1,32 @@
-// example 1 of addEventListener -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom manipulation</title>
 </head>
 <body>
-    <h2 id="title">hello students</h2>
-    <button id="changbtn">change text</button>
-
+    <h1 id="title">welcome studnt</h1>
+    <p class="message"> learning dom study</p>
+    <ul class="topics">
+        <li>select element</li>
+        <li>changing content</li>
+    </ul>
+    <button class="changedi">change page</button>
     <script>
+        let title1=document.getElementById('title')
         const title=document.querySelector('#title') // select through id
-        const btn=document.querySelector('#changebtn')
+        const message = document.querySelector('.message') // select through class
+        const topics = document.querySelector('li') // select through node like ul, li etc
+        console.log(title)
+        console.log(message)
+        console.log(topics)
+        title.innerHTML='dom is working'
+        message.innerHTML='welcome back'
+        message.textContent= 'welcome to lahore'
 
-        btn=addEventListener('click', function(){  //this is callback function function inside function
-            title.textContent='welcome to our e-learning'
-        })
+        message.style.color='blue' //for css style
+        message.style.backgroundColor='yellow'
     </script>
 </body>
 </html>
