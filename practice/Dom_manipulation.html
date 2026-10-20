@@ -1,23 +1,33 @@
+<!-- todo list example -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>todo list</title>
 </head>
 <body>
-    <form id="LoginForm">
-    <input  id="name" placeholder="enter name">
-    <button type="submit">submit</button>
-    </form>
-    <p id="message"></p>
+    <input type="text" id="taskinput" placeholder="enter task">
+    <button id="addbtn">add task</button>
+   <ul id="todoList"></ul>
+
     <script>
-        const form=document.querySelector('#LoginForm')
-        const nameInput=document.querySelector('#name')
-        const message=document.querySelector('#message')
-        form.addEventListener('submit',function(){
-            event.preventDefault()   // ye browser ko refresh sy rokta hain
-            message.textContent=nameInput.value;
+        const list = document.querySelector('#todoList')
+        const input = document.querySelector('#taskinput')
+        const addbtn= document.querySelector('#addbtn')
+
+        addbtn.addEventListener('click',function(){
+            const li= document.createElement('li')
+            li.textContent=input.value;
+            list.append(li)
+            input.value=""
+            const deletebtn=document.createElement('button')
+            deletebtn.textContent='delete'
+            li.append(deletebtn)
+
+            deletebtn.addEventListener('click',function(){
+                li.remove()
+            })
         })
     </script>
 </body>
