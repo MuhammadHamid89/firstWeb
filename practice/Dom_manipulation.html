@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,4 +29,33 @@
         message.style.backgroundColor='yellow'
     </script>
 </body>
+</html> -->
+
+
+
+
+
+<!-- // example 1 of addEventListener -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">hello students</h2>
+    <button id="changbtn">change text</button>
+
+    <script>
+        const title=document.querySelector('#title') // select through id
+        const btn=document.querySelector('#changebtn')
+
+        btn=addEventListener('click', function(){  //this is callback function function inside function
+            title.textContent='welcome to our e-learning'
+        })
+    </script>
+</body>
 </html>
+
+
