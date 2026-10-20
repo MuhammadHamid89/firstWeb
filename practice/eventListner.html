@@ -1,3 +1,4 @@
+// example 1 of addEventListener -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,20 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="LoginForm">
-    <input  id="name" placeholder="enter name">
-    <button type="submit">submit</button>
-    </form>
-    <p id="message"></p>
+    <h2 id="title">hello students</h2>
+    <button id="changbtn">change text</button>
+
     <script>
-        const form=document.querySelector('#LoginForm')
-        const nameInput=document.querySelector('#name')
-        const message=document.querySelector('#message')
-        form.addEventListener('submit',function(){
-            event.preventDefault()
-            message.textContent=nameInput.value;
+        const title=document.querySelector('#title') // select through id
+        const btn=document.querySelector('#changebtn')
+
+        btn=addEventListener('click', function(){  //this is callback function function inside function
+            title.textContent='welcome to our e-learning'
         })
     </script>
 </body>
 </html>
-
