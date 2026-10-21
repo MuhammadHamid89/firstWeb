@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <button onclick="saveData()">save mode</button>
+    <script>
+        // // const name= localStorage.getItem('name')
+        // localStorage.removeItem('name')
+        // console.log(name)
+        // function saveData(){
+        //     localStorage.setItem('name' , 'ali')
+        //     alert('saved')
+        // }
+
+        // how to store object in local-storage
+        // const user={
+        //     name: 'ali',
+        //     age: 20,
+        // }
+        // localStorage.setItem('user',JSON.stringify(user))
+
+        // (object call) how to fetch object in local storage
+        const test=JSON.parse(localStorage.getItem('user'))
+        console.log(test)
+        console.log(test.name)
+        console.log(test.age)
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <button onclick="saveName()">save</button>
+    <button onclick="loadName()">load</button>
+    <p id="output"></p>
+
+    <script>
+        function saveName(){
+            const name=document.getElementById('name').value;
+            localStorage.setItem('name',name)
+        }
+        function loadName(){
+            const name=localStorage.getItem('name')
+            document.getElementById('output').innerText=name
+        }
+    </script>
+</body>
+</html>
