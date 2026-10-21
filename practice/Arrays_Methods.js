@@ -46,8 +46,8 @@
 // console.log(adults)
 
 //  5: - reduce 
-let marks=[10,20,30]
-let total=marks.reduce(function(sum,mark){
-    return sum+mark
-},10)  // ye starting value yani phly ye 10 or phr oper wali value add hogi
-console.log(total)
+// let marks=[10,20,30]
+// let total=marks.reduce(function(sum,mark){
+//     return sum+mark
+// },10)  // ye starting value yani phly ye 10 or phr oper wali value add hogi
+// console.log(total)

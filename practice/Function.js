@@ -73,11 +73,11 @@
 // }
 // showNumber(2,1,4,5,6)
 
-function totalMarks(...marks){
-    let total=0
-    for (let mark of marks)(
-        total +=mark
-    )
-    return total
-}
-console.log(totalMarks(90,80,70))
+// function totalMarks(...marks){
+//     let total=0
+//     for (let mark of marks)(
+//         total +=mark
+//     )
+//     return total
+// }
+// console.log(totalMarks(90,80,70))

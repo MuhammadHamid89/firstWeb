@@ -179,6 +179,8 @@
 
 
 // 7 :  - ternary operator
-let age= 30
-let result=age >=18 ? 'adult' : 'minor'
-console.log(result)
+// let age= 30
+// let result=age >=18 ? 'adult' : 'minor'
+// console.log(result)
+
+
