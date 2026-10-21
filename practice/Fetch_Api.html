@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="users"></ul>
+    <script>
+        fetch(' https://fake-json-api.mock.beeceptor.com/companies').then((response)=>{
+            return response.json()
+        }).then((data)=>{
+            const users=document.getElementById('users')
+            console.log(data)
+            data.forEach((user)=>{   // yha forEach array par render hoga or array ko iterate kr rhy hain
+                    users.innerHTML+= `<li>${user.name}</li>`
+                    users.innerHTML+= `<li>${user.email}</li>`
+            })
+        })
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch api demo</title>
+</head>
+<body>
+    <h2>user list</h2>
+    <button id="loadbtn">load user</button>
+    <ul id="users"></ul>
+
+    <script src="Fetch_Api.js"></script>
+</body>
+</html>
