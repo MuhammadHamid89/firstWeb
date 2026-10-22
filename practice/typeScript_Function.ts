@@ -52,9 +52,9 @@ greet(123) //error
 //typescript catches these mistakes during development before running code
 
 
-/// ----->tsc  practice/typeScript_function.ts <-----
-//ye code chilany sy js ki file bany gi yani compile kry gi
-// -------> node  practice/typeScript_function.ts  <-------
-//ye js file ko run kry gi or output dekhae gi
+///1 :- ----->tsc  practice/typeScript_function.ts <-----
+//phly ye code chaly ye code chilany sy js ki file bany gi yani compile kry gi
+// 2 : --------> node  practice/typeScript_function.ts  <-------
+//bad my ye chaly output k liye ye js file ko run kry gi or output dekhae gi
 
 //jo typescript_function ki file hai  wo ts wala code chala k banii hain
